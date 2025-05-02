@@ -1,0 +1,24 @@
+<?php
+
+namespace App\Http\Resources\Api\V1;
+
+use Illuminate\Http\Resources\Json\ResourceCollection;
+
+class MutasiBarangCollection extends ResourceCollection
+{
+    public function toArray($request)
+    {
+        return [
+            'data' => MutasiBarangResource::collection($this->collection),
+            'links' => [
+                'self' => $request->fullUrl(),
+            ],
+            'meta' => [
+                'current_page' => $this->currentPage(),
+                'last_page' => $this->lastPage(),
+                'per_page' => $this->perPage(),
+                'total' => $this->total(),
+            ],
+        ];
+    }
+}
