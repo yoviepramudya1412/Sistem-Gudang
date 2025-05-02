@@ -5,6 +5,10 @@ Sistem ini dibuat menggunakan laravel 12 diperuntukkan seleksi online
 
 #**INSTALL**
 
+**Instal Postgressql jika manual melakukannya,buat lah akun dan database serta password lalu tambah kedalam env**
+
+**ENV dalam mode stagging**
+
 
 
 <b style="color:blue; font-size:30px">1. Kloning atau salin project Laravel ke folder lokal</b>
@@ -40,6 +44,11 @@ php artisan db:seed atau php artisan migrate --seed
 
 
 <b style="color:blue; font-size:30px"> Akses aplikasi Laravel</b>
+
+php artisan serve
+
+<b style="color:blue; font-size:30px"> Jika anda tidak menggunakan docker silahkan install manual project laravel 12 dan configurasi code repository ini</b>
+
 
 
 <b style="color:red; font-size:90px"> Link Postman</b>
