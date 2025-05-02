@@ -5,27 +5,42 @@ Sistem ini dibuat menggunakan laravel 12 diperuntukkan seleksi online
 
 #**INSTALL**
 <b style="color:blue; font-size:30px">1. Kloning atau salin project Laravel ke folder lokal</b>
+
+
 <b style="color:blue; font-size:30px">2. Buat volume untuk database PostgreSQL (jika belum)</b>
+
+
 docker volume create pgdata
 
 <b style="color:blue; font-size:30px">3. Bangun dan jalankan container Docker</b>
+
+
 docker-compose up --build -d
 
 <b style="color:blue; font-size:30px">4. Akses ke dalam container Laravel</b>
 
 <b style="color:blue; font-size:30px">5. Instal dependensi PHP via Composer</b>
+
+
 composer install
 
 <b style="color:blue; font-size:30px">6. Generate key aplikasi Laravel</b>
+
 php artisan key:generate
+
 <b style="color:blue; font-size:30px">7. Link storage (opsional untuk file upload)</b>
+
 <b style="color:blue; font-size:30px">8. Jalankan migrasi database</b>
+
 php artisan migrate
 php artisan db:seed atau php artisan migrate --seed
+
+
 <b style="color:blue; font-size:30px"> Akses aplikasi Laravel</b>
 
 
 <b style="color:red; font-size:90px"> Link Postman</b>
+
 https://.postman.co/workspace/My-Workspace~1c772568-e285-4974-835d-111a723d22d2/collection/31277730-e763462d-3ccd-4538-9ec5-413b73d04f32?action=share&creator=31277730
 
 
